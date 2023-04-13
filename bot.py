@@ -1,4 +1,4 @@
-import telegram
+from config import tg_token, api_token
 from datetime import datetime
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import openai
@@ -14,9 +14,9 @@ console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
 # Telegram Token
-tg_token = null
+#tg_token = null
 # Replace API_TOKEN_HERE with your ChatGPT API token
-api_token = null
+#api_token = null
 
 # Replace YOUR_TOKEN_HERE with your bot's API token
 updater = Updater(tg_token, use_context=True)
